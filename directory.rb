@@ -1,36 +1,23 @@
-# put all student names in an array
-students = [
-  { name: "Ms. Fanny Craddock", cohort: :november },
-  { name: "Mr. Sam Akindele", cohort: :november },
-  { name: "Ms. Aisa Bello", cohort: :november },
-  { name: "Mr. Juliana Ogunmola", cohort: :november },
-  { name: "Miss. Sabrina Ogunmola", cohort: :november },
-  { name: "Mr. John van der Merwe", cohort: :november },
-  { name: "Mr. Jushua Funke", cohort: :november },
-  { name: "Aimen Subhi", cohort: :november },
-  { name: "Mr. John Dom", cohort: :november },
-  { name: "Mr. James Bond", cohort: :november },
-]
-# using a method to print the names
-# 1 print header
-def print_header
-  puts "The students of the Holahoop Academy"
-  puts "-------------"
-end
-
-# 2 print names
-def print(students)
-  students.each do |student|
-    puts "#{student[:name]} (#{student[:cohort]} cohort)"
+def input(students)
+  puts "Please enter the names of the students"
+  puts "To finish, just hit return twice"
+  # create an empty array
+  students = []
+  # get the first name
+  name = gets.chomp
+  # while the name is not empty, repeat this code
+  while !name.empty?
+    # add the student hash to the array
+    students << { name: name, cohort: :november }
+    puts "Now we have #{students.count} students"
+    # get another name from the user
+    name = gets.chomp
   end
+  # return the array of students
+  students
 end
 
-# 3 print footer
-def print_footer(students)
-  puts "Overall, we have #{students.count} great students"
-end
-
-# 4 call methods
+students = input_students
 print_header
 print(students)
 print_footer(students)
