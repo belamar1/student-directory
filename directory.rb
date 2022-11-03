@@ -1,15 +1,15 @@
 # put all student names in an array
 students = [
-  ["Ms. Fanny Craddock", :november],
-  ["Mr. Sam Akindele", :november],
-  ["Ms. Aisa Bello", :november],
-  ["Mr. Juliana Ogunmola", :november],
-  ["Miss. Sabrina Ogunmola", :november],
-  ["Mr. John van der Merwe", :november],
-  ["Mr. Jushua Funke", :november],
-  ["Aimen Subhi", :november],
-  ["Mr. John Dom", :november],
-  ["Mr. James Bond", :november],
+  { name: "Ms. Fanny Craddock", cohort: :november },
+  { name: "Mr. Sam Akindele", cohort: :november },
+  { name: "Ms. Aisa Bello", cohort: :november },
+  { name: "Mr. Juliana Ogunmola", cohort: :november },
+  { name: "Miss. Sabrina Ogunmola", cohort: :november },
+  { name: "Mr. John van der Merwe", cohort: :november },
+  { name: "Mr. Jushua Funke", cohort: :november },
+  { name: "Aimen Subhi", cohort: :november },
+  { name: "Mr. John Dom", cohort: :november },
+  { name: "Mr. James Bond", cohort: :november },
 ]
 # using a method to print the names
 # 1 print header
@@ -21,7 +21,7 @@ end
 # 2 print names
 def print(students)
   students.each do |student|
-    puts "#{student[0]} (#{student[1]} cohort)"
+    puts "#{student[:name]} (#{student[:cohort]} cohort)"
   end
 end
 
