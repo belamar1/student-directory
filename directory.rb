@@ -17,4 +17,4 @@ students = [
 puts "The students of Hillhoop Academy"
 puts "-----------------"
 puts students
-puts "Overall, we have #{student_count} great students"
+puts "Overall, we have #{students.count} great students"
