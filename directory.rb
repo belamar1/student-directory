@@ -1,5 +1,5 @@
 # puts "The students of Hillhoop Academy"
-student_count = 11
+student_count = 10
 # put all student names in an array
 students = [
   "Ms. Fanny Craddock",
@@ -16,5 +16,7 @@ students = [
 # print the array
 puts "The students of Hillhoop Academy"
 puts "-----------------"
-puts students
+students.each do |student|
+  puts student
+end
 puts "Overall, we have #{students.count} great students"
