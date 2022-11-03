@@ -1,19 +1,20 @@
+# puts "The students of Hillhoop Academy"
+student_count = 11
+# put all student names in an array
+students = [
+  "Ms. Fanny Craddock",
+  "Mr. Sam Akindele",
+  "Ms. Aisa Bello",
+  "Mr. Juliana Ogunmola",
+  "Miss. Sabrina Ogunmola",
+  "Mr. John van der Merwe",
+  "Mr. Jushua Funke",
+  "Aimen Subhi",
+  "Mr. John Dom",
+  "Mr. James Bond",
+]
+# print the array
 puts "The students of Hillhoop Academy"
 puts "-----------------"
-puts "Ms. Fanny Craddock"
-puts "Mr. Sam Akindele"
-puts "Ms. Aisa Bello"
-puts "Mr. Juliana Ogunmola"
-puts "Miss. Sabrina Ogunmola"
-puts "Mr. John van der Merwe"
-puts "Mr. Jushua Funke"
-puts "Aimen Subhi"
-puts "Mr. John Dom"
-puts "Mr. James Bond"
-student_count = 11
-# finally, we print the total as 3 lines below
-# print "Overall, we have "
-# print student_count
-# puts " great students"
-
+puts students
 puts "Overall, we have #{student_count} great students"
