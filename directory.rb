@@ -1,5 +1,3 @@
-# puts "The students of Hillhoop Academy"
-student_count = 10
 # put all student names in an array
 students = [
   "Ms. Fanny Craddock",
@@ -13,10 +11,26 @@ students = [
   "Mr. John Dom",
   "Mr. James Bond",
 ]
-# print the array
-puts "The students of Hillhoop Academy"
-puts "-----------------"
-students.each do |student|
-  puts student
+# using a method to print the names
+# 1 print header
+def print_header
+  puts "The students of my cohort at Makers Academy"
+  puts "-------------"
 end
-puts "Overall, we have #{students.count} great students"
+
+# 2 print names
+def print(names)
+  names.each do |name|
+    puts name
+  end
+end
+
+# 3 print footer
+def print_footer(names)
+  puts "Overall, we have #{names.count} great students"
+end
+
+# 4 call methods
+print_header
+print(students)
+print_footer(students)
